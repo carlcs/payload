@@ -1,6 +1,8 @@
 'use client'
+import { useAuth } from '@payloadcms/ui'
 import React from 'react'
 
 export const MyAvatar: React.FC = () => {
-  return <p>Some custom Avatar</p>
+  const { user } = useAuth()
+  return <p>{user ? user.email : 'no user'}</p>
 }

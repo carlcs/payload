@@ -26,6 +26,7 @@ export default buildConfigWithDefaults({
     // MediaCollection
   ],
   admin: {
+    autoLogin: false,
     importMap: {
       baseDir: path.resolve(dirname),
     },
